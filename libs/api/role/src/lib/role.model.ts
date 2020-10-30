@@ -16,14 +16,14 @@ export class Role extends BaseModel {
     unique: true,
     text: true,
     maxlength: 255,
-    minlength: 6,
+    minlength: 4,
   })
   @AutoMap()
   name: string;
   @prop({
     unique: true,
     text: true,
-    minlength: 6,
+    minlength: 4,
   })
   @AutoMap()
   slug: string;

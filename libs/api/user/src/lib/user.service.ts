@@ -25,7 +25,7 @@ export class UserService extends BaseService<User> {
   async getUsers(): Promise<UserVm[]> {
     const users = await this.cacheService.get('users', () =>
       this.userRepository.findAll().exec()
-    );
+    ) as User[] ;
 
     return this.mapper.mapArray(users, UserVm, User);
   }
@@ -37,21 +37,17 @@ export class UserService extends BaseService<User> {
   }
 
   async getUserInformation(id: string): Promise<UserInformationVm> {
-    const user = await this.getUserById(id);
+    const user = await this.findByEmail(id);
     return this.mapper.map(user, UserInformationVm, User);
   }
 
   async verify(id: string): Promise<UserVm> {
-    const now = parse(
-      new Date().toLocaleString(),
-      'M/d/yyyy, h:mm:ss aaa',
-      Date.now()
-    );
+   const now  = new Date();
     const result = await this.userRepository
       .updateBy(id, {
         $set: { verify: now },
       })
-      .exec();
+      .exec() as User;
 
     return this.mapper.map(result, UserVm, User);
   }

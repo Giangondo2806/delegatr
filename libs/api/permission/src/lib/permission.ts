@@ -1,8 +1,9 @@
+import { BaseModel } from '@delegatr/api/common';
 import { prop } from '@typegoose/typegoose';
 import { AutoMap } from 'nestjsx-automapper';
 import { Privilege } from './privilege';
 
-export class Permission {
+export class Permission{
   @prop({ required: true, index: true, text: true })
   @AutoMap()
   group: string;

@@ -8,4 +8,8 @@ export class RoleService {
     private readonly roleRepository: RoleRepository,
     @InjectMapper() private readonly mapper: AutoMapper
   ) {}
+
+  async create(role){
+    return await this.roleRepository.create(role);
+  }
 }

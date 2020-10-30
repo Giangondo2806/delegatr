@@ -21,7 +21,7 @@ export class UserProfile extends ProfileBase {
     super();
     mapper.createMap(User, UserVm).reverseMap();
     mapper.createMap(User, AuthUser).forMember(
-      (d) => d.role,
+      (d) =>d.role,
       mapWith(RoleVm, (s) => s.role)
     );
     mapper

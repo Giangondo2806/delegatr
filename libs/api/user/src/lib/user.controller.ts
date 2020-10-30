@@ -28,11 +28,11 @@ export class UserController {
   @Get('me')
   @UseGuards(
     AuthGuard(),
-    PermissionGuard(PermissionGroups.User, Privilege.Read)
+    PermissionGuard( 1,'user')
   )
   @ApiOkResponse({ type: UserInformationVm })
   @ApiOperationId()
   async me(@CurrentUser() currentUser: AuthUser): Promise<UserInformationVm> {
-    return await this.userService.getUserInformation(currentUser.id);
+    return await this.userService.getUserInformation(currentUser.email);
   }
 }

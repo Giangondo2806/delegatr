@@ -1,3 +1,4 @@
+import { Permission } from '@delegatr/api/permission';
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { RoleController } from './role.controller';

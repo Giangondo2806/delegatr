@@ -1,3 +1,4 @@
+
 import { memoize } from '@delegatr/api/common';
 import { AuthUser } from '@delegatr/api/view-models';
 import { CanActivate, ExecutionContext, mixin } from '@nestjs/common';
@@ -7,19 +8,18 @@ import { PermissionGroups } from '../permission-groups';
 import { Privilege } from '../privilege';
 
 export const PermissionGuard: (
-  group: PermissionGroups,
-  privilege: Privilege
+  privilege: Privilege,
+  group: string
 ) => CanActivate = memoize(createPermissionGuard);
 
 function createPermissionGuard(
-  group: PermissionGroups,
-  privilege: Privilege
+  privilege: Privilege,
+  group: string
 ): Constructor<CanActivate> {
   class MixinPermissionGuard implements CanActivate {
     canActivate(context: ExecutionContext) {
       const currentUser = (context.switchToHttp().getRequest<Request>() as any)
         .user as AuthUser;
-
       const hasPermission = () => {
         if (currentUser.role?.permissions == null) {
           return false;

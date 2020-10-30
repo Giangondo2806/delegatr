@@ -92,7 +92,10 @@
               "apps/client/tsconfig.app.json",
               "apps/client/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/client/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/client/**"
+            ]
           }
         },
         "test": {
@@ -127,8 +130,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/client-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/client-e2e/**"]
+            "tsConfig": [
+              "apps/client-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/client-e2e/**"
+            ]
           }
         }
       }
@@ -174,7 +182,10 @@
               "apps/api/tsconfig.app.json",
               "apps/api/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/api/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/api/**"
+            ]
           }
         },
         "test": {
@@ -200,7 +211,10 @@
               "libs/api/common/tsconfig.lib.json",
               "libs/api/common/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/common/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/common/**"
+            ]
           }
         },
         "test": {
@@ -226,7 +240,10 @@
               "libs/api/config/tsconfig.lib.json",
               "libs/api/config/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/config/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/config/**"
+            ]
           }
         },
         "test": {
@@ -252,7 +269,10 @@
               "libs/api/role/tsconfig.lib.json",
               "libs/api/role/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/role/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/role/**"
+            ]
           }
         },
         "test": {
@@ -278,7 +298,10 @@
               "libs/api/view-models/tsconfig.lib.json",
               "libs/api/view-models/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/view-models/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/view-models/**"
+            ]
           }
         },
         "test": {
@@ -304,7 +327,10 @@
               "libs/api/permission/tsconfig.lib.json",
               "libs/api/permission/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/permission/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/permission/**"
+            ]
           }
         },
         "test": {
@@ -330,7 +356,10 @@
               "libs/api/mappings/tsconfig.lib.json",
               "libs/api/mappings/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/mappings/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/mappings/**"
+            ]
           }
         },
         "test": {
@@ -356,7 +385,10 @@
               "libs/api/user/tsconfig.lib.json",
               "libs/api/user/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/user/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/user/**"
+            ]
           }
         },
         "test": {
@@ -382,7 +414,10 @@
               "libs/api/auth/tsconfig.lib.json",
               "libs/api/auth/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/auth/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/auth/**"
+            ]
           }
         },
         "test": {
@@ -408,7 +443,10 @@
               "libs/api/types/tsconfig.lib.json",
               "libs/api/types/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/types/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/types/**"
+            ]
           }
         },
         "test": {
@@ -434,7 +472,10 @@
               "libs/api/security/tsconfig.lib.json",
               "libs/api/security/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/security/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/security/**"
+            ]
           }
         },
         "test": {
@@ -460,7 +501,10 @@
               "libs/background/common/tsconfig.lib.json",
               "libs/background/common/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/background/common/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/background/common/**"
+            ]
           }
         },
         "test": {
@@ -486,7 +530,10 @@
               "libs/background/user-job/tsconfig.lib.json",
               "libs/background/user-job/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/background/user-job/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/background/user-job/**"
+            ]
           }
         },
         "test": {
@@ -512,7 +559,10 @@
               "libs/background/role-job/tsconfig.lib.json",
               "libs/background/role-job/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/background/role-job/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/background/role-job/**"
+            ]
           }
         },
         "test": {
@@ -538,7 +588,10 @@
               "libs/api/task/tsconfig.lib.json",
               "libs/api/task/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/task/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/task/**"
+            ]
           }
         },
         "test": {
@@ -564,7 +617,10 @@
               "libs/api/assignment/tsconfig.lib.json",
               "libs/api/assignment/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/assignment/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/assignment/**"
+            ]
           }
         },
         "test": {
@@ -590,7 +646,10 @@
               "libs/api/timeframe/tsconfig.lib.json",
               "libs/api/timeframe/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/timeframe/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/timeframe/**"
+            ]
           }
         },
         "test": {
@@ -616,7 +675,10 @@
               "libs/api/caching/tsconfig.lib.json",
               "libs/api/caching/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/caching/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/caching/**"
+            ]
           }
         },
         "test": {
@@ -642,7 +704,10 @@
               "libs/api/email/tsconfig.lib.json",
               "libs/api/email/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/email/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/email/**"
+            ]
           }
         },
         "test": {
@@ -668,7 +733,10 @@
               "libs/background/email-job/tsconfig.lib.json",
               "libs/background/email-job/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/background/email-job/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/background/email-job/**"
+            ]
           }
         },
         "test": {
@@ -694,7 +762,10 @@
               "libs/api/availability-pool/tsconfig.lib.json",
               "libs/api/availability-pool/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api/availability-pool/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api/availability-pool/**"
+            ]
           }
         },
         "test": {
@@ -720,7 +791,10 @@
               "libs/client/core/tsconfig.lib.json",
               "libs/client/core/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/client/core/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/client/core/**"
+            ]
           }
         },
         "test": {
@@ -752,7 +826,10 @@
               "libs/client/nswag/tsconfig.lib.json",
               "libs/client/nswag/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/client/nswag/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/client/nswag/**"
+            ]
           }
         },
         "test": {
@@ -778,7 +855,10 @@
               "libs/client/common/tsconfig.lib.json",
               "libs/client/common/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/client/common/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/client/common/**"
+            ]
           }
         },
         "test": {
@@ -793,7 +873,8 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": false
   },
   "schematics": {
     "@nrwl/angular:application": {
